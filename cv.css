@@ -1,0 +1,17 @@
+body
+{
+background-color: silver;
+}
+table
+{
+    background-color: white;
+}
+a:hover
+{
+    color: rgb(250, 192, 1);
+}
+.in
+{
+    
+margin-left: 25%;
+}
