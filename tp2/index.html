@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <title>TP 2 Aw </title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+    <script type="text/javascript" src="formulaire.js"></script>
+    </head>
+    <body>
+
+       
+
+<form method="post" action="">
+
+
+           
+                Nom <br/>
+                <input name="Nom" type="text" id="Nom" /> <br/>
+                Prénom <br/>
+                <input name="Prenom" type="text" id="Prenom" /><br/>
+    
+                Date de naissance <br/>
+                <input name="Date" type="text" id="Date" placeholder="JJ/MM/AAAA" /><br/>
+        
+                Adresse <br/>
+                <input name="Adresse" type="text" id="Adresse" value="" /><br/>
+            
+            
+                Mail<br/>
+                <input name="Mail" type="text" id="Mail" value="" /><br/>
+                
+                <input type="button" value="Valider" onclick="validation()" />
+        
+   </form>
+
+        <div id="error" hidden>    </div>
+
+        <div id="resultat" hidden>  </div>
+
+</body>
+</html>
