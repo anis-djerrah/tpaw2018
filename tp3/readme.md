@@ -29,12 +29,12 @@ Table des matières
   
   
 ## 1. Objectif du TP
-* Faire connaissance avec [Bootstrap](https://github.com/twbs/bootstrap) la librairie CSS la plus célèbre
+* Faire connaissance avec [Bootstrap](https://github.com/twbs/bootstrap) (v4) la librairie CSS la plus célèbre
 * Utiliser [jQuery](https://jquery.com/) pour y voir les équivalences avec du Javascript Natif
 * Utilisation du calendrier Jquery-ui qui a plus de paramètrages que le calendrier natif des navigateurs
 
 Bootstrap est le framework HTML/CSS/JS le plus populaire pour développer des sites web “responsive” et orientés “mobile-first”.
-Tuto: http://www.w3schools.com/bootstrap/default.asp, 
+La version 4.0 (que nous utiliserons) vient de sortir, les tutoriels sur internet parlent encore donc souvent de la version 3.3.7.
 
 jQuery ajoute des fonctions au Javascript 'natif', il était beaucoup utilisé dans les années 2007-2015 avant l'arrivée de la dernière version de Javascript ([ES2015](http://www.lilleweb.fr/js/2015/03/23/a-la-decouverte-de-es2015/)
 Tuto: http://www.w3schools.com/jquery/default.asp
