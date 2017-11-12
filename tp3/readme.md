@@ -80,13 +80,13 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
 <!-- CSS boostrap -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
-<!-- composants JS de boostap (modal http://getbootstrap.com/docs/4.0/components/modal/ , tooltip...) -->
-   <script src="js/bootstrap.min.js"></script>
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+<script src="js/bootstrap.min.js"></script>
 ```
 
 ## 3. Création du formulaire avec Bootstrap
     1. Sous la balise <body>, ajouter la DIV :
-```
+```html
 <div class="container">
   <!-- Content here -->
 </div>
