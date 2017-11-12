@@ -5,6 +5,16 @@ Master 3IR | <a href="https://3ir2018.slack.com">3ir2018.slack.com</a>
 TP AW #3 : HTML & Javascript
 =================
 
+### Préquis (⚠️ important)
+
+* Lire **tout** l'énnoncé avant de commencer le TP.
+
+❓❓Si vous avez des questions ou des erreurs dans votre code : 
+* formater (indenter) bien votre code (raccourci Visual Studio Code : Ctrl + K puis Ctrl + F)
+* demander à Google 🔍
+* demander à vos camarades 👩‍🎓👨‍🎓
+* demander au professeur 🙋
+
 Table des matières
 =================
 
@@ -101,7 +111,10 @@ $( document ).ready(function() {
 ```
 
 2. Syntaxe pour récupérer la valeur d’un champ
-| Javascript                             | jQuery           |
-|----------------------------------------|------------------|
-| document.querySelector("#name").value; | $("#name").val() |   
 
+|                                 | Javascript                                          | jQuery           |
+|---------------------------------|-----------------------------------------------------|----------------------------------------------|
+|Attente du chargement de la page | window.onload = function(){ ... };                  | $( document ).ready(function(){ .... });     |
+|Selection d'un élément           | document.querySelector("#name").value;              | $("#name").val()                             |
+|Modifier de contenu HTML         | document.querySelector("#name").innerHTML = "blabla | $("#conteneur").html("Chaine de caractère"); | 
+|Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
