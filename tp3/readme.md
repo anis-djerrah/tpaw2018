@@ -82,3 +82,26 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
       2. Formulaires : http://getbootstrap.com/docs/4.0/components/forms
       * **Utiliser par exemple ce formulaire pour ce TP http://getbootstrap.com/docs/4.0/components/forms/#layout**
       3. Boutons : http://getbootstrap.com/docs/4.0/components/buttons
+
+## 4. Validation jQuery
+   1. Créer votre script JavaScript form-jquery-validation.js
+```
+<script src="form-jquery-validation.js"></script>
+```
+Votre code JS/jquery sera structuré comme suit : 
+
+```
+$( document ).ready(function() {
+   // ce code est exécuter une fois que toute la page est téléchargée par le navigateur
+   // voir plus : https://www.w3schools.com/js/js_htmldom.asp
+    console.log( "DOM ready!" );
+    
+    // Y mettre le code jQuery pour valider tous les champs du formulaire
+});
+```
+
+2. Syntaxe pour récupérer la valeur d’un champ
+| Javascript                             | jQuery           |
+|----------------------------------------|------------------|
+| document.querySelector("#name").value; | $("#name").val() |   
+
