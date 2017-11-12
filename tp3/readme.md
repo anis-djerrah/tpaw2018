@@ -123,7 +123,7 @@ $( document ).ready(function() {
 |Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
 
 ## 5. Affichage d'une popup (modal)
-![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image2.png "texte pour le titre, facultatif")   
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image4.png "texte pour le titre, facultatif")   
 Modal quand un champ est vide
 
    1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise </body>)
@@ -158,4 +158,18 @@ Modal quand un champ est vide
 
 ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image3.png "texte pour le titre, facultatif")   
 Modal quand tous les champs sont OK
+
+   3. Pour l'image voir documentation vers Google Static Maps API https://developers.google.com/maps/documentation/static-maps/
+   4. L'image devra être entouré par un lien hypertexte vers Google Mapas: http://maps.google.com/maps?q=Paris
+
+
+## 6. Ajout d’un calendrier jQueryUI
+
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image2.png "texte pour le titre, facultatif")   
+   1. Mettre en place le  plug-in Datepicker de JqueryUI disponible ici : http://jqueryui.com/datepicker/
+      * Options disponibles pour ce plugin http://api.jqueryui.com/datepicker/
+  
+   2. Spécifier un format de saisie de la date "dd/mm/yy"
+   3. Restreindre la saisie max de la date au jour courant (option maxdate)
+
 
