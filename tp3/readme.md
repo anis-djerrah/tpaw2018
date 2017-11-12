@@ -57,22 +57,25 @@ Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans 
 
 Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js
 
-Votre répertoire tp3 devra ressembler à ça:
+A la fin du TP votre répertoire devra ressembler à ça:
 
 
 ```
 tp3/
+├── index.html
 ├── css/
 │   ├── bootstrap.css
 │   ├── bootstrap.min.css
 └── js/
     ├── bootstrap.js
     └── bootstrap.min.js
-    └── jquery-3.2.1.slim.min.js    
+    └── jquery-3.2.1.slim.min.js   
+    └── form-jquery-validation.js
 ```
 
 
 Copier ces imports de scripts JS et CSS dans la section <HEAD>
+
 ```html
 <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
 <script src="js/jquery-3.2.1.slim.min.js"></script>
@@ -85,7 +88,7 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
 ```
 
 ## 3. Création du formulaire avec Bootstrap
-    1. Sous la balise <body>, ajouter la DIV :
+      1. Sous la balise <body>, ajouter la DIV :
 ```html
 <div class="container">
   <!-- Content here -->
@@ -101,7 +104,7 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
 ## 4. Validation jQuery
    1. Créer votre script JavaScript form-jquery-validation.js
 ```html
-<script src="form-jquery-validation.js"></script>
+<script src="js/form-jquery-validation.js"></script>
 ```
 Votre code JS/jquery sera structuré comme suit : 
 
@@ -124,8 +127,8 @@ $( document ).ready(function() {
 |Attente du chargement de la page | window.onload = function(){ ... };                  | $( document ).ready(function(){ .... });     |
 |Selection d'un élément           | document.querySelector("#name")                     | $("#name")                                   |
 |valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
-|Modifier de contenu HTML         | document.querySelector("#name").innerHTML = "blabla   | $("#conteneur").html("Chaine de caractère"); | 
-|Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
+|Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '<img src="map.jpg"/>'   | $(".modal-body").html('<img src="map.jpg"/>'); | 
+|Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $("".modal-title")").text("Chaine de caractère"); | 
 | ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit"),on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
 
 ## 5. Affichage d'une popup (modal)
