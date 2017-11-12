@@ -29,10 +29,9 @@ Table des matières
   
   
 ## 1. Objectif du TP
-* Mise en forme avec [Bootstrap](https://github.com/twbs/bootstrap) du formulaire de saisie de coordonnées personnelles
-* Validation du formulaire en [jQuery](https://jquery.com/)
-* Affichage d'une carte Google Map
-* Utilisation du calendrier Jquery-ui
+* Faire connaissance avec [Bootstrap](https://github.com/twbs/bootstrap) la librairie CSS la plus célèbre
+* Utiliser [jQuery](https://jquery.com/) pour y voir les équivalences avec du Javascript Natif
+* Utilisation du calendrier Jquery-ui qui a plus de paramètrages que le calendrier natif des navigateurs
 
 Bootstrap est le framework HTML/CSS/JS le plus populaire pour développer des sites web “responsive” et orientés “mobile-first”.
 Tuto: http://www.w3schools.com/bootstrap/default.asp, 
