@@ -21,7 +21,7 @@ Table des matières
   1. [Objectif du TP](#1-objectif-du-tp)
   2. [Plateforme de dév](#2-plateforme-de-dév)
   3. [Création du formulaire avec Bootstrap](#3-création-du-formulaire-avec-bootstrap)
-  4 [Validation jQuery](#4-validation-jquery)
+  4. [Validation jQuery](#4-validation-jquery)
   5. [Affichage d'une popup (modal)](#5-affichage-dune-popup-modal)
   6. [Ajout d’un calendrier jQueryU](#6-ajout-dun-calendrier-jqueryui)
   
