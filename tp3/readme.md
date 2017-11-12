@@ -110,11 +110,43 @@ $( document ).ready(function() {
 });
 ```
 
-2. Syntaxe pour récupérer la valeur d’un champ
+2. Equivalence entre Javascript natif et jQuery
 
 |                                 | Javascript                                          | jQuery           |
 |---------------------------------|-----------------------------------------------------|----------------------------------------------|
 |Attente du chargement de la page | window.onload = function(){ ... };                  | $( document ).ready(function(){ .... });     |
-|Selection d'un élément           | document.querySelector("#name").value;              | $("#name").val()                             |
-|Modifier de contenu HTML         | document.querySelector("#name").innerHTML = "blabla | $("#conteneur").html("Chaine de caractère"); | 
+|Selection d'un élément           | document.querySelector("#name")                     | $("#name")                                   |
+|valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
+|Modifier de contenu HTML         | document.querySelector("#name").innerHTML = "blabla   | $("#conteneur").html("Chaine de caractère"); | 
 |Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
+
+3. Affichage d'une popup (modal)
+   1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise </body>)
+   
+   La modal devra avoir un identifiant pour pouvoir être utiliser en javascript 
+```
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+   2. affichage de la modal
+```
+   $('#myModal').modal("show");
+```
