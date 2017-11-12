@@ -8,9 +8,9 @@ TP AW #3 : HTML & Javascript
 Table des matières
 =================
 
-  * [Objectif du TP](#objectif-du-tp)
-  * [Plateforme de dév](#plateforme-de-dev)
-  * [Création du formulaire avec Bootstrap](#creation-du-formulaire-avec-bootstrap)
+  * [Objectif du TP](#1-objectif-du-tp)
+  * [Plateforme de dév](#2-plateforme-de-dev)
+  * [Création du formulaire avec Bootstrap](#3-creation-du-formulaire-avec-bootstrap)
   * [Espace d’information pour la validation du formulaire](#espace-dinformation-pour-la-validation-du-formulaire)
   * [Validation Javascript](#validation-javascript)
   
