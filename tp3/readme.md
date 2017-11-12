@@ -21,8 +21,8 @@ Table des matières
   * [Objectif du TP](#1-objectif-du-tp)
   * [Plateforme de dév](#2-plateforme-de-dév)
   * [Création du formulaire avec Bootstrap](#3-création-du-formulaire-avec-bootstrap)
-  * [Espace d’information pour la validation du formulaire](#espace-dinformation-pour-la-validation-du-formulaire)
-  * [Validation Javascript](#validation-javascript)
+  * [Validation jQuery](#4-validation-jquery)
+  * [Affichage d'une popup (modal)](#5-affichage-dune-popup-modal)
   
 ## 1. Objectif du TP
 * Mise en forme avec [Bootstrap](https://github.com/twbs/bootstrap) du formulaire de saisie de coordonnées personnelles
@@ -110,7 +110,9 @@ $( document ).ready(function() {
 });
 ```
 
-2. Equivalence entre Javascript natif et jQuery
+   2. Si tous les champs sont correctes, afficher une fenêtre modale (voir [partie 5](#5-affichage-dune-popup-modal)) avec une image statique Google Maps et un lien (ouvrant une nouvelle fenêtre/onglet) vers Google Maps
+
+   3. Equivalence entre Javascript natif et jQuery
 
 |                                 | Javascript                                          | jQuery           |
 |---------------------------------|-----------------------------------------------------|----------------------------------------------|
@@ -121,6 +123,9 @@ $( document ).ready(function() {
 |Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
 
 ## 5. Affichage d'une popup (modal)
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image2.png "texte pour le titre, facultatif")   
+Modal quand un champ est vide
+
    1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise </body>)
    
    La modal devra avoir un identifiant pour pouvoir être utiliser en javascript 
@@ -135,7 +140,7 @@ $( document ).ready(function() {
         </button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p>Corps de la modal à modifier après validation du formulaire</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary">Save changes</button>
@@ -150,3 +155,7 @@ $( document ).ready(function() {
 ```
    $('#myModal').modal("show");
 ```
+
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image3.png "texte pour le titre, facultatif")   
+Modal quand tous les champs sont OK
+
