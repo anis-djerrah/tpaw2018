@@ -9,8 +9,8 @@ Table des matières
 =================
 
   * [Objectif du TP](#1-objectif-du-tp)
-  * [Plateforme de dév](#2-plateforme-de-dev)
-  * [Création du formulaire avec Bootstrap](#3-creation-du-formulaire-avec-bootstrap)
+  * [Plateforme de dév](#2-plateforme-de-dév)
+  * [Création du formulaire avec Bootstrap](#3-création-du-formulaire-avec-bootstrap)
   * [Espace d’information pour la validation du formulaire](#espace-dinformation-pour-la-validation-du-formulaire)
   * [Validation Javascript](#validation-javascript)
   
