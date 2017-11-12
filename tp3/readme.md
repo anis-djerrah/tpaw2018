@@ -9,11 +9,12 @@ Table des matières
 =================
 
   * [Objectif du TP](#objectif-du-tp)
-  * [Formulaire HTML](#formulaire-html)
+  * [Plateforme de dév](#plateforme-de-dev)
+  * [Création du formulaire avec Bootstrap](#creation-du-formulaire-avec-bootstrap)
   * [Espace d’information pour la validation du formulaire](#espace-dinformation-pour-la-validation-du-formulaire)
   * [Validation Javascript](#validation-javascript)
   
-## Objectif du TP
+## 1. Objectif du TP
 * Mise en forme avec [Bootstrap](https://github.com/twbs/bootstrap) du formulaire de saisie de coordonnées personnelles
 * Validation du formulaire en [jQuery](https://jquery.com/)
 * Affichage d'une carte Google Map
@@ -35,4 +36,52 @@ Le formulaire permettra de saisir les informations suivantes :
 * Adresse postale
 * Adresse mail
 
+![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image1.png "texte pour le titre, facultatif")   
 
+
+## 2. Plateforme de dév
+
+Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 : http://getbootstrap.com/docs/4.0/getting-started/download/
+
+Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js 
+
+Votre répertoire tp3 devra ressembler à ça:
+
+
+```
+tp3/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+└── js/
+    ├── bootstrap.js
+    └── bootstrap.min.js
+    └── jquery-3.2.1.slim.min.js    
+```
+
+
+Copier ces imports de scripts JS et CSS dans la section <HEAD>
+```
+<!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+
+<!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- composants JS de boostap (modal http://getbootstrap.com/docs/4.0/components/modal/ , tooltip...) -->
+   <script src="js/bootstrap.min.js"></script>
+```
+
+## 3. Création du formulaire avec Bootstrap
+    1. Sous la balise <body>, ajouter la DIV :
+```
+<div class="container">
+  <!-- Content here -->
+</div>
+```
+
+   2. Elements principaux Bootstrap pour mettre en forme les formulaires
+      1. Grilles : http://getbootstrap.com/docs/4.0/layout/grid/
+      2. Formulaires : http://getbootstrap.com/docs/4.0/components/forms/
+      * **Utiliser par exemple ce formulaire pour ce TP http://getbootstrap.com/docs/4.0/components/forms/#layout**
+      3. Boutons : http://getbootstrap.com/docs/4.0/components/buttons/
