@@ -126,7 +126,7 @@ $( document ).ready(function() {
 |valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
 |Modifier de contenu HTML         | document.querySelector("#name").innerHTML = "blabla   | $("#conteneur").html("Chaine de caractère"); | 
 |Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
-| ajouter un "listener" à un élément | ```js document.querySelector("#submit").addEventListener(function(event){ event.preventDefault(); ... } ``` |  ```js $("#submit"),on("click",function(event){ event.preventDefault(); ... } ``` |
+| ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit"),on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
 
 ## 5. Affichage d'une popup (modal)
 ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image4.png "texte pour le titre, facultatif")   
