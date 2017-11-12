@@ -3,7 +3,7 @@
      <img src="https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true" alt="Logo Master" width=100/>
   </a>  
   <br/>
-  Master 3IR² | <a href="https://3ir2018.slack.com">3ir2018.slack.com</a>
+  Master 3IR² | <a href="https://3ir2018.slack.com/messages/aw">3ir2018.slack.com</a>
 <h3 align="center">TP AW #3 : Bootstrap & jQuery</h3>
 </p>
 
