@@ -88,12 +88,13 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
 ```
 
 ## 3. Création du formulaire avec Bootstrap
-      1. Sous la balise <body>, ajouter la DIV :
+      1. Sous la balise \<body\>, ajouter la DIV :
 ```html
 <div class="container">
   <!-- Content here -->
 </div>
 ```
+Tout votre code HTMl devra être dans cette DIV.
 
    2. Elements principaux Bootstrap pour mettre en forme les formulaires
       1. Grilles : http://getbootstrap.com/docs/4.0/layout/grid
