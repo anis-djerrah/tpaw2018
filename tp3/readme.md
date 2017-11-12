@@ -1,6 +1,6 @@
 ![Logo galille](https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true)
 
-Master 3IR | [3ir2018.slack.com](https://3ir2018.slack.com)
+Master 3IR | [3ir2018.slack.com](https://3ir2018.slack.com){:target="_blank"}
 
 TP AW #3 : HTML & Javascript
 =================
@@ -15,19 +15,19 @@ Table des matières
   * [Validation Javascript](#validation-javascript)
   
 ## 1. Objectif du TP
-* Mise en forme avec [Bootstrap](https://github.com/twbs/bootstrap) du formulaire de saisie de coordonnées personnelles
-* Validation du formulaire en [jQuery](https://jquery.com/)
+* Mise en forme avec [Bootstrap](https://github.com/twbs/bootstrap){:target="_blank"} du formulaire de saisie de coordonnées personnelles
+* Validation du formulaire en [jQuery](https://jquery.com/){:target="_blank"}
 * Affichage d'une carte Google Map
 * Utilisation du calendrier Jquery-ui
 
 Bootstrap est le framework HTML/CSS/JS le plus populaire pour développer des sites web “responsive” et orientés “mobile-first”.
 Tuto: http://www.w3schools.com/bootstrap/default.asp, 
 
-jQuery ajoute des fonctions au Javascript 'natif', il était beaucoup utilisé dans les années 2007-2015 avant l'arrivée de la dernière version de Javascript ([ES2015](http://www.lilleweb.fr/js/2015/03/23/a-la-decouverte-de-es2015/))
-Tuto: http://www.w3schools.com/jquery/default.asp
+jQuery ajoute des fonctions au Javascript 'natif', il était beaucoup utilisé dans les années 2007-2015 avant l'arrivée de la dernière version de Javascript ([ES2015](http://www.lilleweb.fr/js/2015/03/23/a-la-decouverte-de-es2015/){:target="_blank"})
+Tuto: http://www.w3schools.com/jquery/default.asp{:target="_blank"}
 
 Le code source de ce TP devra être déposé sur votre compte github dans le répertoire /tp3. Voir ce document pour configurer Github pour héberger vos TP
-https://docs.google.com/document/d/15yItw0-hxtkCZSQlg57UcT1vFlrpx6QwSDv7nycvDgY/edit?usp=sharing
+https://docs.google.com/document/d/15yItw0-hxtkCZSQlg57UcT1vFlrpx6QwSDv7nycvDgY/edit?usp=sharing{:target="_blank"}
 
 Le formulaire permettra de saisir les informations suivantes :
 * Nom
@@ -41,9 +41,9 @@ Le formulaire permettra de saisir les informations suivantes :
 
 ## 2. Plateforme de dév
 
-Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 : http://getbootstrap.com/docs/4.0/getting-started/download/
+Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 : http://getbootstrap.com/docs/4.0/getting-started/download/{:target="_blank"}
 
-Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js 
+Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js{:target="_blank"}
 
 Votre répertoire tp3 devra ressembler à ça:
 
@@ -81,7 +81,7 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
 ```
 
    2. Elements principaux Bootstrap pour mettre en forme les formulaires
-      1. Grilles : http://getbootstrap.com/docs/4.0/layout/grid/
-      2. Formulaires : http://getbootstrap.com/docs/4.0/components/forms/
-      * **Utiliser par exemple ce formulaire pour ce TP http://getbootstrap.com/docs/4.0/components/forms/#layout**
-      3. Boutons : http://getbootstrap.com/docs/4.0/components/buttons/
+      1. Grilles : http://getbootstrap.com/docs/4.0/layout/grid/{:target="_blank"}
+      2. Formulaires : http://getbootstrap.com/docs/4.0/components/forms/{:target="_blank"}
+      * **Utiliser par exemple ce formulaire pour ce TP http://getbootstrap.com/docs/4.0/components/forms/#layout{:target="_blank"}**
+      3. Boutons : http://getbootstrap.com/docs/4.0/components/buttons/{:target="_blank"}
