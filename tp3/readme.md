@@ -120,7 +120,7 @@ $( document ).ready(function() {
 |Modifier de contenu HTML         | document.querySelector("#name").innerHTML = "blabla   | $("#conteneur").html("Chaine de caractère"); | 
 |Modifier de contenu textuelle    | document.querySelector("#name").textContent = "blabla | $("#conteneur").text("Chaine de caractère"); | 
 
-3. Affichage d'une popup (modal)
+## 5. Affichage d'une popup (modal)
    1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise </body>)
    
    La modal devra avoir un identifiant pour pouvoir être utiliser en javascript 
