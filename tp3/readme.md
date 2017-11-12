@@ -1,6 +1,6 @@
 ![Logo galille](https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true)
 
-Master 3IR | [3ir2018.slack.com](https://3ir2018.slack.com){:target="_blank"}
+Master 3IR | <a href="https://3ir2018.slack.com" target="_blank">3ir2018.slack.com</a>
 
 TP AW #3 : HTML & Javascript
 =================
