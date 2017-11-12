@@ -1,9 +1,8 @@
-![Logo galille](https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true)
-
+<p align="center">
+<img src="https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true" alt="Logo Master" width=100/><br/>
 Master 3IR | <a href="https://3ir2018.slack.com">3ir2018.slack.com</a>
-
-TP AW #3 : HTML & Javascript
-=================
+<h3 align="center">TP AW #3 : Bootstrap & jQuery</h3>
+</p>
 
 ### Préquis (⚠️ important)
 
