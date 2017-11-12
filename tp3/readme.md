@@ -7,7 +7,7 @@
 <h3 align="center">TP AW #3 : Bootstrap & jQuery</h3>
 </p>
 
-### Préquis (⚠️ important)
+### Prérequis (⚠️ important)
 
 * Lire **tout** l'énnoncé avant de commencer le TP.
 
