@@ -73,7 +73,7 @@ tp3/
 
 
 Copier ces imports de scripts JS et CSS dans la section <HEAD>
-```
+```html
 <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 
@@ -100,12 +100,12 @@ Copier ces imports de scripts JS et CSS dans la section <HEAD>
 
 ## 4. Validation jQuery
    1. Créer votre script JavaScript form-jquery-validation.js
-```
+```html
 <script src="form-jquery-validation.js"></script>
 ```
 Votre code JS/jquery sera structuré comme suit : 
 
-```
+```js
 $( document ).ready(function() {
    // ce code est exécuter une fois que toute la page est téléchargée par le navigateur
    // voir plus : https://www.w3schools.com/js/js_htmldom.asp
@@ -134,7 +134,7 @@ Modal quand un champ est vide
    1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise </body>)
    
    La modal devra avoir un identifiant pour pouvoir être utiliser en javascript 
-```
+```html
 <div class="modal" tabindex="-1" role="dialog" id="myModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -157,7 +157,7 @@ Modal quand un champ est vide
 ```
 
    2. affichage de la modal
-```
+```js
    $('#myModal').modal("show");
 ```
 
