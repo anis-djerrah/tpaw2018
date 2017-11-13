@@ -135,7 +135,7 @@ $( document ).ready(function() {
 |Selection d'un élément           | document.querySelector("#name")                     | $("#name")                                   |
 |valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
 |Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '\<img src="map.jpg"/\>'   | $(".modal-body").html('\<img src="map.jpg"/\>'); | 
-|Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $("".modal-title")").text("Chaine de caractère"); | 
+|Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $(".modal-title").text("Chaine de caractère"); | 
 | ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit").on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
 
 ## 5. Affichage d'une popup (modal)
