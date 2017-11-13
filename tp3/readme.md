@@ -128,7 +128,7 @@ $( document ).ready(function() {
 |Attente du chargement de la page | window.onload = function(){ ... };                  | $( document ).ready(function(){ .... });     |
 |Selection d'un élément           | document.querySelector("#name")                     | $("#name")                                   |
 |valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
-|Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '<img src="map.jpg"/>'   | $(".modal-body").html('<img src="map.jpg"/>'); | 
+|Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '\<img src="map.jpg"/\>'   | $(".modal-body").html('\<img src="map.jpg"/\>'); | 
 |Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $("".modal-title")").text("Chaine de caractère"); | 
 | ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit"),on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
 
@@ -136,7 +136,7 @@ $( document ).ready(function() {
 ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image4.png "texte pour le titre, facultatif")   
 Modal quand un champ est vide
 
-   1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise </body>)
+   1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise \</body\>)
    
    La modal devra avoir un identifiant pour pouvoir être utiliser en javascript 
 ```html
