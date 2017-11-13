@@ -53,9 +53,12 @@ Le formulaire permettra de saisir les informations suivantes :
 
 ## 2. Plateforme de dév
 
-Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 : http://getbootstrap.com/docs/4.0/getting-started/download/
+  * Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 :    http://getbootstrap.com/docs/4.0/getting-started/download/
 
-Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js
+  * Télécharger popper.js qui facilite l'affichage des modal et tooltip :
+  https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
+
+  * Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js
 
 A la fin du TP votre répertoire devra ressembler à ça:
 
@@ -69,6 +72,7 @@ tp3/
 └── js/
     ├── bootstrap.js
     └── bootstrap.min.js
+    ├── popper.min.js
     └── jquery-3.2.1.slim.min.js   
     └── form-jquery-validation.js
 ```
@@ -82,6 +86,8 @@ Copier ces imports de scripts JS et CSS dans la section \<HEAD\>
 
 <!-- CSS boostrap -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/popper.min.js"></script>
 
 <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
 <script src="js/bootstrap.min.js"></script>
