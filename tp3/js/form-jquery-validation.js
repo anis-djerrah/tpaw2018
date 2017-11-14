@@ -16,9 +16,9 @@ $(document).ready(function () {
             +$("#inputprenom ").val()
             +' et vous etes nés le '
             +$("#inputdatedenaissance").val()
-            +' et vous habitez à'+'<br/>'          
+            +' et vous habitez à   '+'<a href=https://www.google.fr/maps/@ target="_blank">localisez moi</a>'       
             +'<img src="map.png" width="330" height="300"/>'+'<br/>'
-            +'<a href=https://www.google.fr/maps/@ target="_blank">localisez moi</a>'
+            
             
         
         
