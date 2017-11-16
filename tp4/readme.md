@@ -4,7 +4,9 @@
   </a>  
   <br/>
   Master 3IR² | <a href="https://3ir2018.slack.com/messages/aw">3ir2018.slack.com</a>
-<h3 align="center">TP AW #4 : Bootstrap & jQuery</h3>
+<h3 align="center">TP AW #4 : 
+Ajout de fonctionnalités HTML5 au formulaire
+</h3>
 <h1>⚠️VERSION BROUILLON⚠️</h1>
 </p>
 
@@ -46,16 +48,16 @@ Reprenez le formulaire du [TP 3](../tp3/) permettant de saisir :
 ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image1.png "texte pour le titre, facultatif")   
 
 
-## 2. Plateforme de dév
+## 2. Plateforme de dév (idem que le TP3)
 
   * Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 :    http://getbootstrap.com/docs/4.0/getting-started/download/
 
-  * Télécharger popper.js qui facilite l'affichage des modal et tooltip :
+  * Télécharger (click droit : ```enregistrer sous...```) popper.js qui facilite l'affichage des modal et tooltip :
   https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
 
-  * Télécharger la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js
+  * Télécharger (click droit : ```enregistrer sous...```) la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js
 
-A la fin du TP votre répertoire devra ressembler à ça:
+Votre répertoire doit ressembler à ça:
 
 
 ```
@@ -72,6 +74,13 @@ tp3/
     └── form-jquery-validation.js
 ```
 
+* Clé Google Map Image à utiliser
+```AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg```
+
+Exemple avec une image centrée sur Paris: <a href="https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg">
+<img src="https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg" alt='google map' width=200/>
+</a>
+```https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg```
 
 Copier ces imports de scripts JS et CSS dans la section \<HEAD\>
 
@@ -88,99 +97,72 @@ Copier ces imports de scripts JS et CSS dans la section \<HEAD\>
 <script src="js/bootstrap.min.js"></script>
 ```
 
-## 3. Création du formulaire avec Bootstrap
-      1. Sous la balise \<body\>, ajouter la DIV :
-```html
-<div class="container">
-  <!-- Content here -->
-</div>
-```
-Tout votre code HTMl devra être dans cette DIV.
+## 2. Geolocalisation HTML5
+  * L'API Géolocalisation HTML5  est utilisée pour obtenir la position géographique d'un utilisateur (si il utilise un navigateur récent)
+  * Ajouter un bouton à coté du champ de saisie de l’adresse 
+  * en JQuery, intercepter le click sur ce bouton et écrire une fonction pour demander la géolocalisation à l’utilisateur
+    * reprendre le code JS sur cette exemple: http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map
 
-   2. Elements principaux Bootstrap pour mettre en forme les formulaires
-      1. Grilles : http://getbootstrap.com/docs/4.0/layout/grid
-      2. Formulaires : http://getbootstrap.com/docs/4.0/components/forms
-      * **Utiliser par exemple ce formulaire pour ce TP http://getbootstrap.com/docs/4.0/components/forms/#layout**
-      3. Boutons : http://getbootstrap.com/docs/4.0/components/buttons
-
-## 4. Validation jQuery
-   1. Créer votre script JavaScript form-jquery-validation.js
-```html
-<script src="js/form-jquery-validation.js"></script>
-```
-Votre code JS/jquery sera structuré comme suit : 
-
-```js
-$( document ).ready(function() {
-   // ce code est exécuter une fois que toute la page est téléchargée par le navigateur
-   // voir plus : https://www.w3schools.com/js/js_htmldom.asp
-    console.log( "DOM ready!" );
-    
-    // Y mettre le code jQuery pour valider tous les champs du formulaire
-});
-```
-
-   2. Si tous les champs sont correctes, afficher une fenêtre modale (voir [partie 5](#5-affichage-dune-popup-modal)) avec une image statique Google Maps et un lien (ouvrant une nouvelle fenêtre/onglet) vers Google Maps
-
-   3. Equivalence entre Javascript natif et jQuery
-
-|                                 | Javascript                                          | jQuery           |
-|---------------------------------|-----------------------------------------------------|----------------------------------------------|
-|Attente du chargement de la page | window.onload = function(){ ... };                  | $( document ).ready(function(){ .... });     |
-|Selection d'un élément           | document.querySelector("#name")                     | $("#name")                                   |
-|valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
-|Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '\<img src="map.jpg"/\>'   | $(".modal-body").html('\<img src="map.jpg"/\>'); | 
-|Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $(".modal-title").text("Chaine de caractère"); | 
-| ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit").on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
-
-## 5. Affichage d'une popup (modal)
-![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image4.png "texte pour le titre, facultatif")   
-Modal quand un champ est vide
-
-   1. Ajouter ce code HTML à la fin de votre page HTML (avant la balise \</body\>)
-   
-   La modal devra avoir un identifiant pour pouvoir être utiliser en javascript 
-```html
-<div class="modal" tabindex="-1" role="dialog" id="myModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Corps de la modal à modifier après validation du formulaire</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-   2. affichage de la modal
-```js
-   $('#myModal').modal("show");
-```
-
-![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image3.png "texte pour le titre, facultatif")   
-Modal quand tous les champs sont OK
-
-   3. Pour l'image voir documentation vers Google Static Maps API https://developers.google.com/maps/documentation/static-maps/
-   4. L'image devra être entouré par un lien hypertexte vers Google Mapas: http://maps.google.com/maps?q=Paris
-
-
-## 6. Ajout d’un calendrier jQueryUI
-
-![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image2.png "texte pour le titre, facultatif")   
-   1. Mettre en place le  plug-in Datepicker de JqueryUI disponible ici : http://jqueryui.com/datepicker/
-      * Options disponibles pour ce plugin http://api.jqueryui.com/datepicker/
+  * documentation et fonction JS de géolocalisation disponibles ici : http://www.w3schools.com/html/html5_geolocation.asp
   
-   2. Spécifier un format de saisie de la date "dd/mm/yy"
-   3. Restreindre la saisie max de la date au jour courant (option maxdate)
+```javascript
+  var map = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        $("#map").html("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
+    
+    $("#map").html("<img src='"+img_url+"'>");
+}
+//To use this code on your website, get a free API key from Google.
+//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            $("#map").html("User denied the request for Geolocation.");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            $("#map").html("Location information is unavailable.");
+            break;
+        case error.TIMEOUT:
+            $("#map").html("The request to get user location timed out.");
+            break;
+        case error.UNKNOWN_ERROR:
+            $("#map").html("An unknown error occurred.");
+            break;
+    }
+}
+```
+
+La géolocalisation vous donnera la lattitude et la longitude de l’utilsateur
+Sous le champ de saisie de l’adresse, afficher une image (dans le code ci-dessus ça s'affiche dans une DIV avec id=map) de Google Maps centrée sur ces coordonnées GPS (documentation de l’API google maps)
+URL de l’image : http://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&size=640x400&zoom=5
+
+## 4. Afficher le nombre de caractère saisie (jQuery)
+
+A coté de chaque champ de saisie, afficher le nombre de caractère saisie en temps réel, c’est-à-dire à chaque fois que l’utilisateur change le contenu du champ.
+Events jQuery relatifs à la saisie : https://api.jquery.com/category/events/keyboard-events/
 
 
+## 5. Stockage du formulaire dans le LocalStorage du navigateur
+HTML Local storage permet de stocker des données dans le navigateur web (comme les cookies) via une combinaison clé:valeur (key:value)
+Exemple
+ 	Pour stocker la valeur “smith” dans la clé “lastname” :  
+localStorage.setItem("lastname", "Smith");
+
+		Pour lire la valeur de la clé  :
+var prenom = localStorage.getItem("lastname");
+
+	Documentation : http://www.w3schools.com/html/html5_webstorage.asp
+
+A chaque fois que l’utilisateur cliquera sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur et afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur
