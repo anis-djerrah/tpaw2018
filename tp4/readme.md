@@ -38,15 +38,15 @@ Table des matières
 
 
 
-Reprenez le formulaire du [TP 3](../tp3/) permettant de saisir :
+Reprenez le formulaire du [TP 3](../tp3/) ou télécharger ce code HTML  [HTML TP4](https://github.com/bilelz/tpaw2018/raw/master/tp4/tp4_html.zip):
 * Nom
 * Prénom 
 * Date de naissance
 * Adresse postale
 * Adresse mail
 
-![Texte alternatif](image4.png "texte pour le titre, facultatif")   
-
+![Texte alternatif](tp4.PNG "texte pour le titre, facultatif")   
+![Texte alternatif](list.PNG "texte pour le titre, facultatif")   
 
 ## 2. Plateforme de dév (idem que le TP3)
 
@@ -183,4 +183,12 @@ var prenom = localStorage.getItem("lastname");
 
 * Documentation : http://www.w3schools.com/html/html5_webstorage.asp
 
-
+## 6. ajouter le contact à un tableau
+  1. Si le formulaire est valide, ajouter toutes les informations au tableau "Liste de contacts"
+  
+* Exemple de code pour ajout un contact au tableau:
+```js
+  document.querySelector("table tbody").innerHTML = document.querySelector("table tbody").innerHTML +
+  '<tr><td>'+nom+'</td><td>'+prenom+'</td><td>';
+  // CODE à compléter pour insérer les autres données
+```
