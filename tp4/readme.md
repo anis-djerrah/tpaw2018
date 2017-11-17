@@ -72,6 +72,7 @@ tp3/
     ├── popper.min.js
     └── jquery-3.2.1.slim.min.js   
     └── form-jquery-validation.js
+    └── gps.js
 ```
 
 * Clé Google Map Image à utiliser
@@ -99,12 +100,8 @@ Copier ces imports de scripts JS et CSS dans la section \<HEAD\>
 
 ## 2. Geolocalisation HTML5
   * L'API Géolocalisation HTML5  est utilisée pour obtenir la position géographique d'un utilisateur (si il utilise un navigateur récent)
-  * Ajouter un bouton à coté du champ de saisie de l’adresse 
-  * en JQuery, intercepter le click sur ce bouton et écrire une fonction pour demander la géolocalisation à l’utilisateur
-    * reprendre le code JS sur cette exemple: http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map
-
-  * documentation et fonction JS de géolocalisation disponibles ici : http://www.w3schools.com/html/html5_geolocation.asp
   
+  * Dans un fichier **gps.js**, copier le code ci-dessous: 
 ```javascript
   var map = document.getElementById("demo");
 
@@ -143,6 +140,15 @@ function showError(error) {
     }
 }
 ```
+
+  * Ajouter un bouton à coté du champ de saisie de l’adresse 
+
+  * en JQuery, dans votre script **form-jquery-validation.js** intercepter le click sur ce bouton et utiliser la fonction getLocation() pour demander la géolocalisation à l’utilisateur
+    * reprendre le code JS sur cette exemple: http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map
+
+  * documentation et fonction JS de géolocalisation disponibles ici : http://www.w3schools.com/html/html5_geolocation.asp
+  
+
 
 La géolocalisation vous donnera la lattitude et la longitude de l’utilsateur.
 
