@@ -38,7 +38,7 @@ Table des matières
 
 
 
-Reprenez le formulaire du [TP 3](../tp3/) ou télécharger ce code HTML  [HTML TP4](https://github.com/bilelz/tpaw2018/raw/master/tp4/tp4_html.zip):
+Reprenez le formulaire du [TP 3](../tp3/) ou télécharger ce code HTML [tp4_html.zip](https://github.com/bilelz/tpaw2018/raw/master/tp4/tp4_html.zip):
 * Nom
 * Prénom 
 * Date de naissance
