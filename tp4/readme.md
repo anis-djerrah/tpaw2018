@@ -45,7 +45,7 @@ Reprenez le formulaire du [TP 3](../tp3/) permettant de saisir :
 * Adresse postale
 * Adresse mail
 
-![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp3/image1.png "texte pour le titre, facultatif")   
+![Texte alternatif](image4.png "texte pour le titre, facultatif")   
 
 
 ## 2. Plateforme de dév (idem que le TP3)
@@ -151,12 +151,14 @@ Afficher une image (dans le code JS ci-dessus ça s'affiche dans une DIV avec id
 URL de l’image : https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg
 
 ## 4. Afficher le nombre de caractère saisie (jQuery)
-
+![Texte alternatif](image3.png "texte pour le titre, facultatif")
 A coté de chaque champ de saisie, afficher le nombre de caractère saisie en temps réel, c’est-à-dire à chaque fois que l’utilisateur change le contenu du champ.
 Events jQuery relatifs à la saisie : https://api.jquery.com/category/events/keyboard-events/
 
 
 ## 5. Stockage du formulaire dans le LocalStorage du navigateur
+
+![Texte alternatif](image1.png "texte pour le titre, facultatif")   
 HTML Local storage permet de stocker des données dans le navigateur web (comme les cookies) via une combinaison clé:valeur (key:value)
 Exemple
 
@@ -171,6 +173,6 @@ var prenom = localStorage.getItem("lastname");
 
 * Documentation : http://www.w3schools.com/html/html5_webstorage.asp
 
-A chaque fois que l’utilisateur cliquera sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur et afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur.
+  1. A chaque fois que l’utilisateur cliquera sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur et afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur.
 
 
