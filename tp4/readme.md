@@ -50,13 +50,6 @@ Reprenez le formulaire du [TP 3](../tp3/) ou télécharger ce code HTML  [HTML T
 
 ## 2. Plateforme de dév (idem que le TP3)
 
-  * Télécharger le code source *compilé* (Compiled CSS and JS) de Bootstrap dans votre dossier TP3 :    http://getbootstrap.com/docs/4.0/getting-started/download/
-
-  * Télécharger (click droit : ```enregistrer sous...```) popper.js qui facilite l'affichage des modal et tooltip :
-  https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
-
-  * Télécharger (click droit : ```enregistrer sous...```) la version slim de jquery dans votre dossier tp3/js: https://code.jquery.com/jquery-3.2.1.slim.min.js
-
 Votre répertoire doit ressembler à ça:
 
 
@@ -83,20 +76,6 @@ Exemple avec une image centrée sur Paris: <a href="https://maps.googleapis.com/
 </a><br/>
 ```https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg```
 
-Copier ces imports de scripts JS et CSS dans la section \<HEAD\>
-
-```html
-<!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
-<script src="js/jquery-3.2.1.slim.min.js"></script>
-
-<!-- CSS boostrap -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-
-<script src="js/popper.min.js"></script>
-
-<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
-<script src="js/bootstrap.min.js"></script>
-```
 
 ## 2. Geolocalisation HTML5
   * L'API Géolocalisation HTML5  est utilisée pour obtenir la position géographique d'un utilisateur (si il utilise un navigateur récent)
@@ -148,7 +127,6 @@ function showError(error) {
 
   * documentation et fonction JS de géolocalisation disponibles ici : http://www.w3schools.com/html/html5_geolocation.asp
   
-
 
 La géolocalisation vous donnera la lattitude et la longitude de l’utilsateur.
 
