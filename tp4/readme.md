@@ -79,7 +79,7 @@ tp3/
 
 Exemple avec une image centrée sur Paris: <a href="https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg">
 <img src="https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg" alt='google map' width=200/>
-</a>
+</a><br/>
 ```https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg```
 
 Copier ces imports de scripts JS et CSS dans la section \<HEAD\>
@@ -144,9 +144,11 @@ function showError(error) {
 }
 ```
 
-La géolocalisation vous donnera la lattitude et la longitude de l’utilsateur
-Sous le champ de saisie de l’adresse, afficher une image (dans le code ci-dessus ça s'affiche dans une DIV avec id=map) de Google Maps centrée sur ces coordonnées GPS (documentation de l’API google maps)
-URL de l’image : http://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&size=640x400&zoom=5
+La géolocalisation vous donnera la lattitude et la longitude de l’utilsateur.
+
+Afficher une image (dans le code JS ci-dessus ça s'affiche dans une DIV avec id=map) de Google Maps centrée sur ces coordonnées GPS (documentation de l’API google maps)
+
+URL de l’image : https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg
 
 ## 4. Afficher le nombre de caractère saisie (jQuery)
 
@@ -157,12 +159,17 @@ Events jQuery relatifs à la saisie : https://api.jquery.com/category/events/key
 ## 5. Stockage du formulaire dans le LocalStorage du navigateur
 HTML Local storage permet de stocker des données dans le navigateur web (comme les cookies) via une combinaison clé:valeur (key:value)
 Exemple
- 	Pour stocker la valeur “smith” dans la clé “lastname” :  
+	* Pour stocker la valeur “smith” dans la clé “lastname” :  
+```js
 localStorage.setItem("lastname", "Smith");
-
-		Pour lire la valeur de la clé  :
+```
+	* Pour lire la valeur de la clé  :
+```js
 var prenom = localStorage.getItem("lastname");
+```
 
-	Documentation : http://www.w3schools.com/html/html5_webstorage.asp
+* Documentation : http://www.w3schools.com/html/html5_webstorage.asp
 
-A chaque fois que l’utilisateur cliquera sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur et afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur
+A chaque fois que l’utilisateur cliquera sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur et afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur.
+
+
