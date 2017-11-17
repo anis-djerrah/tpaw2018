@@ -159,11 +159,12 @@ Events jQuery relatifs à la saisie : https://api.jquery.com/category/events/key
 ## 5. Stockage du formulaire dans le LocalStorage du navigateur
 HTML Local storage permet de stocker des données dans le navigateur web (comme les cookies) via une combinaison clé:valeur (key:value)
 Exemple
-	* Pour stocker la valeur “smith” dans la clé “lastname” :  
+
+* Pour stocker la valeur “smith” dans la clé “lastname” :  
 ```js
 localStorage.setItem("lastname", "Smith");
 ```
-	* Pour lire la valeur de la clé  :
+* Pour lire la valeur de la clé  :
 ```js
 var prenom = localStorage.getItem("lastname");
 ```
