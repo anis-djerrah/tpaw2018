@@ -159,6 +159,10 @@ Events jQuery relatifs à la saisie : https://api.jquery.com/category/events/key
 ## 5. Stockage du formulaire dans le LocalStorage du navigateur
 
 ![Texte alternatif](image1.png "texte pour le titre, facultatif")   
+
+1. Au click sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur
+2. Afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur.
+
 HTML Local storage permet de stocker des données dans le navigateur web (comme les cookies) via une combinaison clé:valeur (key:value)
 Exemple
 
@@ -172,7 +176,5 @@ var prenom = localStorage.getItem("lastname");
 ```
 
 * Documentation : http://www.w3schools.com/html/html5_webstorage.asp
-
-  1. A chaque fois que l’utilisateur cliquera sur le bouton “Valider” du formulaire, enregistrer les valeurs de tous les champs de saisie dans le localStorage du navigateur et afficher un message “Bravo! Le formulaire est sauvegardé.” à l’utilisateur.
 
 
