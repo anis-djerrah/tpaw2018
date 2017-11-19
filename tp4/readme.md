@@ -81,10 +81,10 @@ Exemple avec une image centrée sur Paris: <a href="https://maps.googleapis.com/
 ## 3. Geolocalisation HTML5
   * L'API Géolocalisation HTML5  est utilisée pour obtenir la position géographique d'un utilisateur (si il utilise un navigateur récent)
   
-  * Dans un fichier **gps.js**, copier le code ci-dessous: 
+  1. Dans un fichier **gps.js**, copier le code ci-dessous: 
 ```javascript
-  var map = document.getElementById("demo");
 
+// demande de la localisation à l'utilisateur
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -93,6 +93,7 @@ function getLocation() {
     }
 }
 
+// Si l"utilisateur l'autorise, on récupère les coordonnées dans l'objet "position"
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
@@ -100,9 +101,9 @@ function showPosition(position) {
     
     $("#map").html("<img src='"+img_url+"'>");
 }
-//To use this code on your website, get a free API key from Google.
-//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
+// Au cas ou l'utilisateur refuse
+// Ou si une erreur arrive
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
@@ -121,15 +122,13 @@ function showError(error) {
 }
 ```
 
-  * Ajouter un bouton à coté du champ de saisie de l’adresse 
+  2. Ajouter un bouton à coté du champ de saisie de l’adresse 
 
-  * en JQuery, dans votre script **form-jquery-validation.js** intercepter le click sur ce bouton et utiliser la fonction getLocation() pour demander la géolocalisation à l’utilisateur
-    * reprendre le code JS sur cette exemple: http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation_map
+  3. en JQuery, dans votre script **form-jquery-validation.js** intercepter le click sur ce bouton et utiliser la fonction getLocation() pour demander la géolocalisation à l’utilisateur
 
   * documentation et fonction JS de géolocalisation disponibles ici : http://www.w3schools.com/html/html5_geolocation.asp
   
-
-La géolocalisation vous donnera la lattitude et la longitude de l’utilsateur.
+La géolocalisation vous donnera la latitude et la longitude de l’utilsateur.
 
 Afficher une image (dans le code JS ci-dessus ça s'affiche dans une DIV avec id=map) de Google Maps centrée sur ces coordonnées GPS (documentation de l’API google maps)
 
