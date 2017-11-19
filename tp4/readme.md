@@ -48,7 +48,6 @@ Reprenez le formulaire du [TP 3](../tp3/) ou télécharger ce code HTML [tp4_htm
 * Adresse mail
 
 ![Texte alternatif](tp4.PNG "texte pour le titre, facultatif")   
-![Texte alternatif](list.PNG "texte pour le titre, facultatif")   
 
 ## 2. Plateforme de dév (idem que le TP3)
 
@@ -169,8 +168,8 @@ var prenom = localStorage.getItem("lastname");
   1. créer un fichier ***store.js**
     * Ce script stockera le contact dans une liste JSON
     * Les méthodes disponibles seront:
-      * Ajout d'un contact à la liste
-      * Listing des contacts
+      * Ajout d'un contact à la liste **contactStore.add(_name, _firsname, _date, _adress, _mail);**
+      * Listing des contacts **contactStore.getList();**
  
  * Code à reprendre:
 ```js
@@ -210,11 +209,11 @@ var contactStore = (function () {
 })();
 ```
     
-  2. Si le formulaire est valide, ajouter toutes les informations au tableau JSON  
+  2. Si le formulaire est valide, appeler la méthode qui ajoute toutes les informations au tableau JSON  
 
 
 ## 6. Afficher la liste des contacts dans un tableau HTML
-![Texte alternatif](list.PNG "texte pour le titre, facultatif")  
+![Texte alternatif](tp4.PNG "texte pour le titre, facultatif")   
 
   1. Si le formulaire est valide, ajouter toutes les informations au tableau "Liste de contacts"
   
