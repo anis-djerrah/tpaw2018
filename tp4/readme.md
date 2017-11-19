@@ -33,8 +33,10 @@ Table des matières
   
 ## 1. Objectif du TP
 * HTML5: Commencer à utiliser les capacités avancées (géolocalisation)
-* JS : écrire un code modulaire
-* 
+* JS : écrire un code modulaire (
+  * Article à ce sujet: https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc
+* JS : Manipuler des objets JSON 
+  * voir documentation sur  https://www.w3schools.com/js/js_json_intro.asp
 
 
 
@@ -66,6 +68,7 @@ tp3/
     └── jquery-3.2.1.slim.min.js   
     └── form-jquery-validation.js
     └── gps.js
+    └── store.js
 ```
 
 * Clé Google Map Image à utiliser
@@ -161,12 +164,69 @@ var prenom = localStorage.getItem("lastname");
 
 * Documentation : http://www.w3schools.com/html/html5_webstorage.asp
 
-## 6. ajouter le contact à un tableau
+## 6. ajouter le contact à un tableau JSON (store.js)
+  1. créer un fichier ***store.js**
+    * Ce script stockera le contact dans une liste JSON
+    * Les méthodes disponibles seront:
+      * Ajout d'un contact à la liste
+      * Listing des contacts
+ 
+ * Code à reprendre:
+```js
+/*
+store.js
+Script pour gérer la liste de contact en JSON
+
+Pour ajouter un contact:  contactStore.add(_name, _firsname, _date, _adress, _mail);
+Pour récuper la liste:    contactStore.getList();
+*/
+  var contactStore = (function () {
+    
+  // variable privée
+  var contactList = [];
+
+  // Expose these functions via an interface while hiding
+  // the implementation of the module within the function() block
+
+  return {
+    add: function(_name, _firsname, _date, _adress, _mail) {
+      var contact = { name: _name,
+                      firstname: _firsname,
+                      date: _date,
+                      adress: _adress,
+                      mail: _mail
+      };
+      // ajout du contact à la liste
+      contactList.push(contact);
+        
+      return contactList;
+    },
+
+    getList: function() {
+      return contactList;
+    }
+  }
+})();
+```
+    
+  2. Si le formulaire est valide, ajouter toutes les informations au tableau JSON  
+
+
+## 6. Afficher la liste des contacts dans un tableau HTML
   1. Si le formulaire est valide, ajouter toutes les informations au tableau "Liste de contacts"
   
+* Pour faire une boucle sur une liste JSON:
+
+```js
+for(var index in contactList){
+  console.log(contactList[index].name);
+}
+```
+
 * Exemple de code pour ajout un contact au tableau:
 ```js
   document.querySelector("table tbody").innerHTML = document.querySelector("table tbody").innerHTML +
   '<tr><td>'+nom+'</td><td>'+prenom+'</td><td>';
   // CODE à compléter pour insérer les autres données
 ```
+
