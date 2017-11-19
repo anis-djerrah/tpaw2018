@@ -24,9 +24,9 @@ Table des matières
 =================
 
   1. [Objectif du TP](#1-objectif-du-tp)
-  2. [Plateforme de dév](#2-plateforme-de-dév)
-  3. [Création du formulaire avec Bootstrap](#3-création-du-formulaire-avec-bootstrap)
-  4. [Validation jQuery](#4-validation-jquery)
+  2. [Plateforme de dév](#2-plateforme-de-dév-idem-que-le-tp3)
+  3. [Geolocalisation HTML5](#3-geolocalisation-html5)
+  4. [Afficher le nombre de caractère saisie (jQuery)](#4-afficher-le-nombre-de-caractère-saisie-jquery)
   5. [Affichage d'une popup (modal)](#5-affichage-dune-popup-modal)
   6. [Ajout d’un calendrier jQueryU](#6-ajout-dun-calendrier-jqueryui)
   
@@ -80,7 +80,7 @@ Exemple avec une image centrée sur Paris: <a href="https://maps.googleapis.com/
 ```https://maps.googleapis.com/maps/api/staticmap?markers=Paris&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg```
 
 
-## 2. Geolocalisation HTML5
+## 3. Geolocalisation HTML5
   * L'API Géolocalisation HTML5  est utilisée pour obtenir la position géographique d'un utilisateur (si il utilise un navigateur récent)
   
   * Dans un fichier **gps.js**, copier le code ci-dessous: 
@@ -142,7 +142,7 @@ URL de l’image : https://maps.googleapis.com/maps/api/staticmap?markers=latitu
 A coté de chaque champ de saisie, afficher le nombre de caractère saisie en temps réel, c’est-à-dire à chaque fois que l’utilisateur change le contenu du champ.
 Events jQuery relatifs à la saisie : https://api.jquery.com/category/events/keyboard-events/
 
-
+<!---
 ## 5. Stockage du formulaire dans le LocalStorage du navigateur
 
 ![Texte alternatif](image1.png "texte pour le titre, facultatif")   
@@ -163,8 +163,9 @@ var prenom = localStorage.getItem("lastname");
 ```
 
 * Documentation : http://www.w3schools.com/html/html5_webstorage.asp
+-->
 
-## 6. ajouter le contact à un tableau JSON (store.js)
+## 5. ajouter le contact à un tableau JSON (store.js)
   1. créer un fichier ***store.js**
     * Ce script stockera le contact dans une liste JSON
     * Les méthodes disponibles seront:
