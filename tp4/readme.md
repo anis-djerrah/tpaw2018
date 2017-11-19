@@ -7,7 +7,6 @@
 <h3 align="center">TP AW #4 : 
 Ajout de fonctionnalités HTML5 au formulaire
 </h3>
-<h1>⚠️VERSION BROUILLON⚠️</h1>
 </p>
 
 ### Prérequis (⚠️ important)
