@@ -181,7 +181,7 @@ Script pour gérer la liste de contact en JSON
 Pour ajouter un contact:  contactStore.add(_name, _firsname, _date, _adress, _mail);
 Pour récuper la liste:    contactStore.getList();
 */
-  var contactStore = (function () {
+var contactStore = (function () {
     
   // variable privée
   var contactList = [];
