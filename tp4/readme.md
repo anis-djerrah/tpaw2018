@@ -27,8 +27,8 @@ Table des matières
   2. [Plateforme de dév](#2-plateforme-de-dév-idem-que-le-tp3)
   3. [Geolocalisation HTML5](#3-geolocalisation-html5)
   4. [Afficher le nombre de caractère saisie (jQuery)](#4-afficher-le-nombre-de-caractère-saisie-jquery)
-  5. [Affichage d'une popup (modal)](#5-affichage-dune-popup-modal)
-  6. [Ajout d’un calendrier jQueryU](#6-ajout-dun-calendrier-jqueryui)
+  5. [Ajouter le contact à un tableau JSON (store.js)](#5-ajouter-le-contact-à-un-tableau-json-storejs)
+  6. [Afficher la liste des contacts dans un tableau HTML](#6-afficher-la-liste-des-contacts-dans-un-tableau-html)
   
   
 ## 1. Objectif du TP
@@ -214,6 +214,8 @@ Pour récuper la liste:    contactStore.getList();
 
 
 ## 6. Afficher la liste des contacts dans un tableau HTML
+![Texte alternatif](list.PNG "texte pour le titre, facultatif")  
+
   1. Si le formulaire est valide, ajouter toutes les informations au tableau "Liste de contacts"
   
 * Pour faire une boucle sur une liste JSON:
